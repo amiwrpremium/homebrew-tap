@@ -5,21 +5,21 @@
 class Shellboto < Formula
   desc "Telegram bot that gives whitelisted users a live bash shell on the VPS"
   homepage "https://github.com/amiwrpremium/shellboto"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.2/shellboto_0.1.2_darwin_x86_64.tar.gz"
-      sha256 "5364583f35429dfd0dd350582cf4b9d4eac76e314f66e8d12f7fa491e5f12a7a"
+      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.3/shellboto_0.1.3_darwin_x86_64.tar.gz"
+      sha256 "25127e8c0fe736744d648988c25d2479a03df5258bba9b28d4548d0c8ac48527"
 
       define_method(:install) do
         bin.install "shellboto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.2/shellboto_0.1.2_darwin_arm64.tar.gz"
-      sha256 "738e25752e5f88fa165055c1b3aa46be3998659b257042ffb87a48609d8509fc"
+      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.3/shellboto_0.1.3_darwin_arm64.tar.gz"
+      sha256 "4e3b850e16c25b885c8640c21ae60e83eeca3a82b9f823cc0b750b4e45325530"
 
       define_method(:install) do
         bin.install "shellboto"
@@ -29,15 +29,15 @@ class Shellboto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.2/shellboto_0.1.2_linux_x86_64.tar.gz"
-      sha256 "9da693c3b5fcb636c58ceaa773bda3dd433c7b42e3302c953014b205ce62b223"
+      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.3/shellboto_0.1.3_linux_x86_64.tar.gz"
+      sha256 "0d8fb375deebc580f2859a379b1982214aac7685a6b1a70fe2ca9e21fb4d0f32"
       define_method(:install) do
         bin.install "shellboto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.2/shellboto_0.1.2_linux_arm64.tar.gz"
-      sha256 "eb483d629eb5892c8b37a6c48370a4f64101905f54d8d9ad50b422d2e9b68ca0"
+      url "https://github.com/amiwrpremium/shellboto/releases/download/v0.1.3/shellboto_0.1.3_linux_arm64.tar.gz"
+      sha256 "e74092b0a2415b224c5fd1164c4606c8b8992c55b9ebdac6d685e3bec88a5e45"
       define_method(:install) do
         bin.install "shellboto"
       end
