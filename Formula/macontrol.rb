@@ -5,7 +5,7 @@
 class Macontrol < Formula
   desc "Control your Mac from Telegram — system, media, network, power, and more."
   homepage "https://github.com/amiwrpremium/macontrol"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   depends_on "blueutil"
@@ -16,8 +16,8 @@ class Macontrol < Formula
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/amiwrpremium/macontrol/releases/download/v0.2.2/macontrol_0.2.2_darwin_arm64.tar.gz"
-    sha256 "73cf57f1b10a3dd1c1183a46425393f67e6fb28491cea100f766d35bec13fb8e"
+    url "https://github.com/amiwrpremium/macontrol/releases/download/v0.2.3/macontrol_0.2.3_darwin_arm64.tar.gz"
+    sha256 "1ee63d20d7f0ca6e8668f9d568b8b24e2512d0d59792bf425c4f87992327ea2f"
 
     define_method(:install) do
       bin.install "macontrol"
