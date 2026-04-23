@@ -17,7 +17,7 @@ class Macontrol < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/amiwrpremium/macontrol/releases/download/v0.6.0/macontrol_0.6.0_darwin_arm64.tar.gz"
-    sha256 "abbc83a67541f847f8c1973eef62d8d8086f63d3e4e07b21042b3e91e5bdac78"
+    sha256 "c6e6434e6621931c8d5e95dd8dee36f8f1032e732acbcf1ddaac74cc2202c19e"
 
     define_method(:install) do
       bin.install "macontrol"
